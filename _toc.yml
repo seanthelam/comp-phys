@@ -1,0 +1,89 @@
+# Table of Contents for PY4PHYS
+format: jb-book
+root: index
+
+parts:
+  - caption: "Preface"
+    chapters:
+      - file: intro
+      - file: setup
+
+  - caption: "A. Newtonian Mechanics"
+    chapters:
+      - file: mechanics/index
+        sections:
+          - file: mechanics/kinematics_1d
+          - file: mechanics/kinematics_2d
+          - file: mechanics/newtons_laws
+          - file: mechanics/work_energy
+          - file: mechanics/momentum_collisions
+          - file: mechanics/rotational_motion
+          - file: mechanics/gravitation
+          - file: mechanics/oscillations
+
+  - caption: "B. Waves & Optics"
+    chapters:
+      - file: waves/index
+        sections:
+          - file: waves/wave_properties
+          - file: waves/superposition_interference
+          - file: waves/standing_waves
+          - file: waves/fourier_analysis
+          - file: waves/geometric_optics
+          - file: waves/physical_optics
+
+  - caption: "C. Thermodynamics & Statistical Mechanics"
+    chapters:
+      - file: thermodynamics/index
+        sections:
+          - file: thermodynamics/temperature_heat
+          - file: thermodynamics/ideal_gas
+          - file: thermodynamics/laws_of_thermodynamics
+          - file: thermodynamics/entropy
+          - file: thermodynamics/boltzmann_statistics
+          - file: thermodynamics/maxwell_boltzmann
+
+  - caption: "D. Electricity & Magnetism"
+    chapters:
+      - file: electromagnetism/index
+        sections:
+          - file: electromagnetism/electric_fields
+          - file: electromagnetism/gauss_law
+          - file: electromagnetism/electric_potential
+          - file: electromagnetism/capacitance_circuits
+          - file: electromagnetism/magnetic_fields
+          - file: electromagnetism/faraday_law
+          - file: electromagnetism/maxwell_equations
+
+  - caption: "E. Modern Physics"
+    chapters:
+      - file: modern_physics/index
+        sections:
+          - file: modern_physics/special_relativity
+          - file: modern_physics/photoelectric_effect
+          - file: modern_physics/wave_particle_duality
+          - file: modern_physics/atomic_structure
+          - file: modern_physics/nuclear_physics
+
+# Need a section for Classical Mechanics, Thermal Physics, E&M Theory, and maybe an advanced section.
+
+  - caption: "F. Quantum Mechanics"
+    chapters:
+      - file: quantum_mechanics/index
+        sections:
+          - file: quantum_mechanics/schrodinger_equation
+          - file: quantum_mechanics/particle_in_box
+          - file: quantum_mechanics/harmonic_oscillator
+          - file: quantum_mechanics/hydrogen_atom
+          - file: quantum_mechanics/spin_angular_momentum
+          - file: quantum_mechanics/perturbation_theory
+          - file: quantum_mechanics/variational_method
+          - file: quantum_mechanics/identical_particles
+
+  - caption: "G. Appendix"
+    chapters:
+      - file: appendix/python_primer
+      - file: appendix/numpy_scipy
+      - file: appendix/plotting
+      - file: appendix/style_guide
+      - file: appendix/references
