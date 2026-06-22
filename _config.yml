@@ -1,6 +1,81 @@
-# Book settings - PY4PHYS: A Python-Based Approach to Learning Computational Physics
-title: "PY4PHYS: A Python-Based Approach to Learning Computational Physics"
+# Book settings - PY4PHYS
+title: "PY4PHYS"
 author: "Sean D. Lam"
+logo: _static/logo.png
 copyright: "2026"
 
 # Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: "auto"
+  timeout: 120
+  allow_errors: false
+
+# Define the name of the latex outputs file
+latex:
+  latex_documents:
+    targetname: compphys.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/seanthelam/PY4PHYS
+  path_to_book: .
+  branch: main
+
+# Add GitHub buttons to your book
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: false
+  favicon: _static/favicon.ico
+  extra_navbar: |
+    Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  extra_footer: |
+    <p>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> |
+      Built for physics students at liberal arts colleges and beyond.
+    </p>
+  comments:
+    hypothesis: true
+
+# Advanced configuration
+sphinx:
+  extra_extensions:
+    - sphinx_proof
+    - sphinx_exercise
+    - sphinxcontrib.bibtex
+  config:
+    html_theme_options:
+      repository_url: "https://github.com/yourusername/phys-book"
+      use_repository_button: true
+      use_issues_button: true
+      use_edit_page_button: true
+      home_page_in_navbar: false
+      navbar_align: "left"
+      show_navbar_depth: 2
+      logo_only: false
+      extra_navbar: ""
+      pygments_light_style: "tango"
+      pygments_dark_style: "monokai"
+    mathjax3_config:
+      tex:
+        macros:
+          "N": "\\mathbb{N}"
+          "Z": "\\mathbb{Z}"
+          "Q": "\\mathbb{Q}"
+          "R": "\\mathbb{R}"
+          "C": "\\mathbb{C}"
+          "vr": ["\\vec{r}_{#1}", 1]
+          "vv": ["\\vec{v}_{#1}", 1]
+          "va": ["\\vec{a}_{#1}", 1]
+          "pder": ["\\frac{\\partial #1}{\\partial #2}", 2]
+          "der": ["\\frac{d #1}{d #2}", 2]
+          "bra": ["\\langle #1 |", 1]
+          "ket": ["| #1 \\rangle", 1]
+          "braket": ["\\langle #1 | #2 \\rangle", 2]
+          "expect": ["\\langle #1 \\rangle", 1]
+          "hbar": "\\hbar"
